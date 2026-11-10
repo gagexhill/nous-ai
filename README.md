@@ -9,8 +9,8 @@
 ![React](https://img.shields.io/badge/React-19.3.1-61DAFB)
 ![Three.js](https://img.shields.io/badge/Three.js-0.187.0-000000)
 ![React Three Fiber](https://img.shields.io/badge/R3F-9.8.2-000000)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-3178C6)
-![Vite](https://img.shields.io/badge/Vite-6.4.5-646CFF)
+![TypeScript](https://img.shields.io/badge/TypeScript-7.0.2-3178C6)
+![Vite](https://img.shields.io/badge/Vite-8.3.7-646CFF)
 [![MIT License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 Owned and maintained by Gage Hill
@@ -74,8 +74,8 @@ Optional FLAME mesh -----------------------------------> face morph
 | React Three Fiber | 9.8.2 | React renderer for Three.js |
 | Drei | 10.7.9 | Orbit controls |
 | React Three Postprocessing | 3.2.2 | Bloom |
-| TypeScript | 5.9.3 | Type checking |
-| Vite | 6.4.5 | Local server and static build |
+| TypeScript | 7.0.2 | Type checking |
+| Vite | 8.3.7 | Local server and static build |
 
 ## 🏗 Project Architecture
 
@@ -132,6 +132,8 @@ npm --version
 ### Installation
 
 ```sh
+git clone https://github.com/gagexhill/nous-ai.git
+cd nous-ai
 npm ci
 npm run dev
 ```
@@ -150,6 +152,8 @@ npm run preview
 - [Operations](OPERATIONS.md) owns setup and validation.
 - [Repository guidance](AGENTS.md) owns contributor constraints.
 - [Devlog](DEVLOG.md) records completed decisions.
+- [Security policy](SECURITY.md) explains private vulnerability reporting.
+- Report bugs through [Issues](https://github.com/gagexhill/nous-ai/issues), including browser, operating system and reproduction steps. Use synthetic media and omit private recordings.
 
 ## 📁 File Structure
 
