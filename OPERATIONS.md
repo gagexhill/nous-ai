@@ -42,7 +42,11 @@ The [scan configuration](.github/codeql-config.yml) excludes generated `dist`
 output and installed dependencies. Project source, tests and build configuration
 remain in scope. Dependency advisories are checked separately with `npm audit`.
 
-Inspect the results and source paths before uploading. For a scan of the current,
+Inspect the results and source paths before uploading. CodeQL can include absolute
+installation paths in the optional `runs[].tool.extensions[].locations` metadata.
+Remove that package-location metadata before sharing; preserve findings, rules,
+source locations and coverage. Check the entire report for remaining local paths.
+For a scan of the current,
 clean default branch, bind the upload to its exact commit:
 
 ```powershell
