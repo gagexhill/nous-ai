@@ -6,13 +6,15 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     emptyOutDir: true,
-    rollupOptions: {
+    rolldownOptions: {
       output: {
         // Split vendor chunks to improve caching.
-        manualChunks: {
-          'three-vendor': ['three'],
-          'r3f-vendor': ['@react-three/fiber', '@react-three/drei', '@react-three/postprocessing'],
-          'react-vendor': ['react', 'react-dom'],
+        codeSplitting: {
+          groups: [
+            { name: 'three-vendor', test: /node_modules[\\/]three[\\/]/ },
+            { name: 'r3f-vendor', test: /node_modules[\\/]@react-three[\\/]/ },
+            { name: 'react-vendor', test: /node_modules[\\/](react|react-dom|scheduler)[\\/]/ },
+          ],
         },
       },
     },

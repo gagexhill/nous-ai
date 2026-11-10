@@ -11,3 +11,9 @@
 - The Owner approved personal ownership and MIT licensing for the source. [LICENSE](LICENSE) owns the grant and copyright notice.
 - The public repository starts from a fresh source snapshot. Optional mesh data retains its separate provenance and licensing requirements in [Operations](OPERATIONS.md#optional-face-mode).
 - Dependency updates use local checks. Hosted update scheduling is disabled.
+
+## 2026-11-10 - Repository readiness and current build tooling
+
+- Updated TypeScript to 7.0.2 and the React plugin to 6.2.1 together with its required Vite 8 line. Vite 8.3.7 uses native Rolldown chunk configuration.
+- Added the root security policy and private reporting entry point.
+- Code scanning uses the official local CodeQL CLI; hosted Actions remain disabled. [Operations](OPERATIONS.md) owns the local runbook.
