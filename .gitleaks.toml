@@ -1,0 +1,4 @@
+title = "nous-ai gitleaks configuration"
+
+[extend]
+useDefault = true

@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.env.*
+*.local
+
+# Optional user-supplied mesh data
+public/flame/
+
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
