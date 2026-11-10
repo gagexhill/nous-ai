@@ -35,7 +35,7 @@ outside the repository. From the repository root, run:
 
 ```powershell
 codeql database create ../nous-codeql-db --language=javascript-typescript --source-root . --threads=1 --ram=2048
-codeql database analyze ../nous-codeql-db codeql/javascript-queries:codeql-suites/javascript-security-and-quality.qls --format=sarif-latest --output=../nous-codeql.sarif --threads=1 --ram=2048 --sarif-category=javascript-typescript
+codeql database analyze ../nous-codeql-db codeql/javascript-queries:codeql-suites/javascript-security-and-quality.qls --format=sarif-latest --output=../nous-codeql.sarif --threads=1 --ram=4096 --sarif-category=javascript-typescript
 ```
 
 Inspect the results and source paths before uploading. For a scan of the current,
