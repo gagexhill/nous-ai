@@ -34,9 +34,13 @@ and use a clean checkout of the commit being scanned. Keep the database and SARI
 outside the repository. From the repository root, run:
 
 ```powershell
-codeql database create ../nous-codeql-db --language=javascript-typescript --source-root . --threads=1 --ram=2048
+codeql database create ../nous-codeql-db --language=javascript-typescript --source-root . --codescanning-config=.github/codeql-config.yml --threads=1 --ram=2048
 codeql database analyze ../nous-codeql-db codeql/javascript-queries:codeql-suites/javascript-security-and-quality.qls --format=sarif-latest --output=../nous-codeql.sarif --threads=1 --ram=4096 --sarif-category=javascript-typescript
 ```
+
+The [scan configuration](.github/codeql-config.yml) excludes generated `dist`
+output and installed dependencies. Project source, tests and build configuration
+remain in scope. Dependency advisories are checked separately with `npm audit`.
 
 Inspect the results and source paths before uploading. For a scan of the current,
 clean default branch, bind the upload to its exact commit:

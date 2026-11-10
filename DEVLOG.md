@@ -17,3 +17,4 @@
 - Updated TypeScript to 7.0.2 and the React plugin to 6.2.1 together with its required Vite 8 line. Vite 8.3.7 uses native Rolldown chunk configuration.
 - Added the root security policy and private reporting entry point.
 - Code scanning uses the official local CodeQL CLI; hosted Actions remain disabled. [Operations](OPERATIONS.md) owns the local runbook.
+- The native CodeQL configuration excludes generated build output and installed packages; it keeps project source, tests and build configuration in scope. Dependency advisories remain a separate check.
