@@ -10,3 +10,4 @@
 
 - The Owner approved personal ownership and MIT licensing for the source. [LICENSE](LICENSE) owns the grant and copyright notice.
 - The public repository starts from a fresh source snapshot. Optional mesh data retains its separate provenance and licensing requirements in [Operations](OPERATIONS.md#optional-face-mode).
+- Dependency updates use local checks. Hosted update scheduling is disabled.

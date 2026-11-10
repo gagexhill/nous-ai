@@ -156,7 +156,6 @@ npm run preview
 ```text
 src/               Viewer source
 test/              Local speech regression tests
-.github/           Dependency update configuration
 .githooks/         Optional secret scanning hook
 index.html         Browser entry document
 package.json       Scripts and dependencies

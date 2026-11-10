@@ -7,3 +7,4 @@
 - Keep microphone and narration audio in the browser. Speak must bind a voice the browser identifies as local and decline when none is available.
 - Keep third-party model inputs and generated meshes out of Git. Accept only data-only mesh files at runtime. Confirm rights before distributing assets.
 - Run tests, typecheck, build and affected browser interactions with and without compatible mesh files. Label simulated and device-observed results separately.
+- Run dependency checks locally. Scheduling hosted update or validation jobs requires explicit Owner direction.
